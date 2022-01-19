@@ -82,13 +82,81 @@ fieldset {
 textarea {
   resize: vertical;
 }
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+  footer,
+  header,
+  main,
+  div,
+  
+  section{
+    outline: 1px black;
+  }
+  .g-container{
+    display: grid;
+    max-width: 85rem;
+    margin: 0 auto;
+    
+  }
+
+  /* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+  .m-col-1{
+    grid-template-columns: 1fr;
+  }
+  
+  .m-col-2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .m-col-3{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .m-col-4{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .m-col-5{
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .m-col-6{
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .m-col-7{
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .m-col-8{
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+
 
 /* ==========================================================================
-   Author's custom styles
+   LAYOUT
    ========================================================================== */
 
 /* ==========================================================================
-   Helper classes
+   UTILITIES
    ========================================================================== */
 
 /*
